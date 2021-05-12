@@ -1,0 +1,12 @@
+---
+layout: page.njk
+pagination:
+    data: games
+    size: 1
+    alias: game
+permalink: "games/{{ game.name | slug }}/"
+---
+
+<h1>{{ game.name }}</h1>
+
+<p>Rating: {{ game.rating }} out of 10</p>

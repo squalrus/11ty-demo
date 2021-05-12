@@ -11,8 +11,5 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1"
-  },
-  "dependencies": {
-    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1"
   }
 }

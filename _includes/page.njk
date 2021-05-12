@@ -1,19 +1,21 @@
 ---
-title: My Rad Blog
+title: 11ty Demo
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }}</title>
-  </head>
-  <body>
+    <meta name="description" content="{{ description }}">
+</head>
+
+<body>
     {% include 'menu.njk' %}
 
-    <p>{{ content | emojiReadTime }}</p>
-
     {{ content | safe }}
-  </body>
+</body>
+
 </html>
