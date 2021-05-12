@@ -1,0 +1,8 @@
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/this-is-a-new-path/subdirectory/testing/">Testing</a></li>
+<li><a href="/another-page/">Another Page</a></li>
+{%- for possum in possums -%}
+  <li><a href="/possums/{{ possum.name | slug }}/">{{ possum.name }}</a></li>
+{%- endfor -%}
+</ul>
