@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "build",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build",
+            "detail": "npm-run-all eleventy:production stylelint:production sass:production"
+        },
+        {
+            "type": "npm",
+            "script": "watch",
+            "group": "test",
+            "label": "npm: watch",
+            "detail": "npm-run-all --parallel eleventy:watch sass:watch",
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}
