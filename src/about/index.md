@@ -1,7 +1,6 @@
 ---
 layout: page.njk
 title: Super Site | About
-permalink: "this-is-a-new-path/subdirectory/testing/"
 eleventyExcludeFromCollections: true
 ---
 
@@ -21,7 +20,11 @@ eleventyExcludeFromCollections: true
 
 ## Collections
 
-{{ collections[data] }}
+<ul>
+{%- for game in games -%}
+  <li>{{ game.name }}</li>
+{%- endfor -%}
+</ul>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse magna quam, volutpat in mi non, gravida gravida mauris. Duis gravida, diam feugiat gravida euismod, dui leo fringilla mauris, id mattis nulla erat et justo. Proin egestas mollis eros, ut lobortis dui pretium molestie. Nunc posuere faucibus lacus ut fringilla. Pellentesque dapibus mollis dolor a gravida. Vivamus at purus ut ante dignissim imperdiet. Ut egestas viverra congue. Duis mattis diam erat, id cursus erat ultrices non. Nunc fringilla, arcu vitae accumsan ultrices, nunc tellus lacinia nulla, ut mollis diam nibh eu ex. Nam vel justo urna. Etiam sit amet egestas purus. Donec ullamcorper sed neque ut ornare. Morbi volutpat odio tincidunt, accumsan ligula id, pharetra purus. Nulla quis sem ex.
 
