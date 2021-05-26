@@ -1,7 +1,7 @@
 ---
-layout: page.njk
-title: Home
-description: "11ty demo homepage"
+layout: _homepage.njk
+title: Great Internet Site
+description: '11ty demo homepage'
 ---
 
-# Page heading
+Welcome to the most okayest site on the internet.

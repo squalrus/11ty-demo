@@ -1,11 +1,13 @@
 ---
-layout: page.njk
+layout: _page.njk
 ---
 
 <h1>Games</h1>
 
 <ul>
-{%- for game in games -%}
-    <li><a href="/games/{{ game.name | slug }}/">{{ game.name }}</a></li>
-{%- endfor -%}
+    {%- for game in games -%}
+    <li>
+        <a href="/games/{{ game.name | slug }}/">{{ game.name }}</a>
+    </li>
+    {%- endfor -%}
 </ul>
