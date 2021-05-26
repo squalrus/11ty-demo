@@ -1,10 +1,10 @@
 ---
-layout: page.njk
+layout: _page.njk
 pagination:
     data: games
     size: 1
     alias: game
-permalink: "games/{{ game.name | slug }}/"
+permalink: 'games/{{ game.name | slug }}/'
 ---
 
 <h1>{{ game.name }}</h1>

@@ -1,5 +1,5 @@
 ---
-layout: page.njk
+layout: _page.njk
 title: Super Site | About
 eleventyExcludeFromCollections: true
 ---
